@@ -227,7 +227,7 @@ export default function AboutPage() {
       {/* Footer / Author section */}
       <div className="text-center pt-8 border-t border-[var(--border)]">
         <p className="text-xs font-mono uppercase text-[var(--text-dim)]">
-          AI Healthcare Infrastructure Map • Version 2.1.0
+          MedAssist AI Infrastructure Map • Version 2.1.0
         </p>
         <span className="text-[10px] font-mono text-[var(--text-secondary)] uppercase mt-2.5 block">
           AdarshGzz • Data Engineering & Intelligent Systems

@@ -69,9 +69,9 @@ describe('TopNav Component', () => {
 
     // The title spans "MedAssist AI" – multiple elements contain
     // this text (the h1 logo and the nav dropdown button), so use *AllBy*.
-    const matches = screen.getAllByText(/AI Healthcare/i);
+    const matches = screen.getAllByText(/MedAssist/i);
     expect(matches.length).toBeGreaterThanOrEqual(1);
-    expect(screen.getAllByText(/System/i).length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText(/AI/i).length).toBeGreaterThanOrEqual(1);
   });
 
   it('renders user information', () => {

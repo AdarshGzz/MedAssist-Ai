@@ -213,8 +213,8 @@ export default function TopNav({
           </div>
           <div className="hidden xl:block">
             <h1 className="text-xs font-bold text-[var(--text-primary)] tracking-wide uppercase">
-              AI Healthcare{" "}
-              <span className="text-[var(--text-secondary)] font-normal">System</span>
+              MedAssist{" "}
+              <span className="text-[var(--text-secondary)] font-normal">AI</span>
             </h1>
           </div>
         </Link>

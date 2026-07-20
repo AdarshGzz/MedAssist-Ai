@@ -128,7 +128,7 @@ export default function LoginPage() {
           </div>
 
           <h2 className="text-3xl font-black uppercase tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[var(--text-primary)] via-white to-[var(--text-secondary)] display-hero mb-4">
-            AI Healthcare Console
+            MedAssist AI Console
           </h2>
           <p className="text-[var(--text-secondary)] text-[11px] font-mono max-w-xs leading-relaxed uppercase tracking-wider mb-8 opacity-75">
             Access secure diagnostic modeling, real-time patient ADT telemetry, and on-premises clinical AI synthesis.
