@@ -51,11 +51,11 @@ MedAssist AI is engineered from the ground up to provide state-of-the-art clinic
 
 ### Clinical Dashboard
 > *Live monitoring of patient vitals and predictive diagnostics.*
-<img src="docs/assets/screenshot-dashboard.png" width="100%" alt="MedAssist AI Dashboard" />
+<img src="https://placehold.co/1200x600/111827/06b6d4?text=MedAssist+AI+Dashboard+Screenshot+Placeholder" width="100%" alt="MedAssist AI Dashboard" />
 
 ### AI Copilot Interface
 > *HIPAA-compliant, localized AI querying for clinical decision support.*
-<img src="docs/assets/screenshot-copilot.png" width="100%" alt="MedAssist AI Copilot" />
+<img src="https://placehold.co/1200x600/111827/8b5cf6?text=MedAssist+AI+Copilot+Screenshot+Placeholder" width="100%" alt="MedAssist AI Copilot" />
 
 ---
 
