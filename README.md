@@ -49,13 +49,21 @@ MedAssist AI is engineered from the ground up to provide state-of-the-art clinic
 
 ## 📸 Platform Screenshots
 
-### Clinical Dashboard
-> *Live monitoring of patient vitals and predictive diagnostics.*
-<img src="https://placehold.co/1200x600/111827/06b6d4?text=MedAssist+AI+Dashboard+Screenshot+Placeholder" width="100%" alt="MedAssist AI Dashboard" />
+### 1. Secure Authentication Console
+> *Zero-trust login interface featuring JWT encryption and active session auditing.*
+<img src="docs/assets/screenshot-login.png" width="100%" alt="MedAssist AI Login Console" />
 
-### AI Copilot Interface
-> *HIPAA-compliant, localized AI querying for clinical decision support.*
-<img src="https://placehold.co/1200x600/111827/8b5cf6?text=MedAssist+AI+Copilot+Screenshot+Placeholder" width="100%" alt="MedAssist AI Copilot" />
+### 2. Clinical Operations Dashboard
+> *The Nexus Vitalis command center for one-click patient care and hospital overviews.*
+<img src="docs/assets/screenshot-dashboard.png" width="100%" alt="MedAssist AI Dashboard" />
+
+### 3. Live Patient Telemetry
+> *60fps OffscreenCanvas ECG rendering and real-time vitals monitoring for ICU beds.*
+<img src="docs/assets/screenshot-telemetry.png" width="100%" alt="Live ECG Telemetry Grid" />
+
+### 4. AI Clinical Copilot
+> *HIPAA-compliant, localized AI querying for clinical decision support and medical guidelines.*
+<img src="docs/assets/screenshot-copilot.png" width="100%" alt="MedAssist AI Copilot Interface" />
 
 ---
 
