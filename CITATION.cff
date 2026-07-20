@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you reference this reference architecture in your academic research, PhD/Master's theses, or final year capstone projects, please cite it as below."
+authors:
+  - given-names: "Adarsh"
+    alias: "AdarshGzz"
+title: "MedAssist AI: Privacy-First Clinical AI & EHR Interoperability Platform"
+version: "1.0.0"
+date-released: "2026-07-20"
+url: "https://github.com/adarshgzz/MedAssist-AI"
+keywords:
+  - "healthcare ai"
+  - "clinical decision support"
+  - "ehr interoperability"
+  - "fhir r4"
+  - "multi-agent systems"
+  - "mlops"

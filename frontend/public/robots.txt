@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Host & Sitemap
+Sitemap: https://github.com/adarshgzz/MedAssist-AI/sitemap.xml
