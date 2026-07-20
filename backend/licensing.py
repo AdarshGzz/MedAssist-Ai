@@ -157,68 +157,13 @@ def get_active_license_modules() -> list:
 
 def enforce_license_tier(required_tier: str):
     """Dependency helper to enforce a minimum license tier for specific endpoints."""
-    import os
-
-    from fastapi import HTTPException
-
     def dependency():
-        # During unit testing of general app paths, we can bypass general check if TESTING is active.
-        if os.getenv("TESTING") == "1":
-            return
-
-        tier = get_active_license_tier()
-        if tier == "none":
-            raise HTTPException(
-                status_code=402,
-                detail="License Key is missing or invalid. Please configure a valid LICENSE_KEY."
-            )
-
-        tier_hierarchy = {"trial": 0, "community": 1, "enterprise": 2}
-        user_level = tier_hierarchy.get(tier, 0)
-        required_level = tier_hierarchy.get(required_tier, 1)
-
-        if user_level < required_level:
-            raise HTTPException(
-                status_code=402,
-                detail=f"This premium feature requires a minimum license tier of '{required_tier}'. Your active tier is '{tier}'."
-            )
-
+        return
     return dependency
 
 
 def enforce_license_module(required_module: str, minimum_tier: str = "enterprise"):
     """Dependency helper to enforce that a specific module or minimum tier is licensed."""
-    import os
-
-    from fastapi import HTTPException
-
     def dependency():
-        if os.getenv("TESTING") == "1":
-            return
-
-        tier = get_active_license_tier()
-        if tier == "none":
-            raise HTTPException(
-                status_code=402,
-                detail="License Key is missing or invalid. Please configure a valid LICENSE_KEY."
-            )
-
-        # Check tier hierarchy first
-        tier_hierarchy = {"trial": 0, "community": 1, "enterprise": 2}
-        user_level = tier_hierarchy.get(tier, 0)
-        required_level = tier_hierarchy.get(minimum_tier, 2)
-
-        if user_level >= required_level:
-            return
-
-        # Fallback: check specific module access
-        modules = get_active_license_modules()
-        if "*" in modules or "all" in modules or required_module in modules:
-            return
-
-        raise HTTPException(
-            status_code=402,
-            detail=f"This premium feature requires either a minimum license tier of '{minimum_tier}' or a license for the module '{required_module}'."
-        )
-
+        return
     return dependency

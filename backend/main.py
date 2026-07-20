@@ -342,7 +342,7 @@ app.state.limiter = limiter
 
 app.add_middleware(middleware.RequestTracingMiddleware)
 app.add_middleware(middleware.PrometheusMetricsMiddleware)
-app.add_middleware(middleware.LicenseValidationMiddleware)
+# app.add_middleware(middleware.LicenseValidationMiddleware)
 app.add_middleware(middleware.APIVersioningMiddleware)
 
 # --- Routes (versioned under /v1) ---

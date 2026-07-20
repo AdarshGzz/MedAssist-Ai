@@ -178,8 +178,8 @@ const LiveECGMonitor = memo(function LiveECGMonitor({ hr, status, mode = "ecg" }
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    // Detect OffscreenCanvas support (guard for browsers, JSDOM, or automated tests)
-    const supportsOffscreen = typeof canvas.transferControlToOffscreen === "function";
+    // Disabled due to React 18 StrictMode canvas reuse issues which causes 'getContext' crashes
+    const supportsOffscreen = false;
 
     if (supportsOffscreen) {
       try {
