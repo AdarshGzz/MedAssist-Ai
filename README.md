@@ -18,13 +18,32 @@
 
 ---
 
-## ✨ Features
+## ✨ Core Features & Capabilities
 
-- **🧠 Local AI Copilot**: Powered by local inference (e.g., Qwen 2.5) via Ollama. No data leaves your machine.
-- **📈 Real-Time Vitals**: High-performance OffscreenCanvas ECG monitoring with synthetic real-time data streaming.
-- **🔐 Enterprise Security**: Offline-first design, strict CORS, rate limiting, and zero-trust authentication.
-- **⚡ Ultra-Fast Stack**: Vite + React 19 frontend paired with a FastAPI async backend.
-- **🧬 Federated Learning**: Edge-based machine learning models built for privacy-preserving clinical diagnostics.
+MedAssist AI is engineered from the ground up to provide state-of-the-art clinical intelligence while strictly adhering to privacy and performance standards. Below is a detailed breakdown of the platform's core capabilities:
+
+### 🧠 1. Local-First AI Copilot (LangGraph & Ollama)
+- **Zero-Data Leakage**: The entire LLM inference stack runs locally on your hardware using Ollama. Patient data never touches a public cloud, ensuring total HIPAA compliance out of the box.
+- **Multi-Agent RAG**: Powered by LangGraph, the AI acts as a multi-agent system capable of retrieving medical guidelines, querying past patient electronic health records (EHR), and synthesizing actionable insights contextually.
+- **Streaming Responses**: Real-time token streaming directly to the Vite frontend for a ChatGPT-like responsive experience.
+
+### 📈 2. Real-Time Patient Telemetry & ECG Monitoring
+- **OffscreenCanvas Architecture**: The dashboard features an advanced `OffscreenCanvas` rendering engine built into React 19, allowing smooth 60fps rendering of multi-channel ECG waveforms and vitals without blocking the main UI thread.
+- **Live Synthetic Data**: Includes a robust synthetic data generator that streams lifelike ADT (Admission, Discharge, Transfer) and HL7 v2/FHIR style metrics over WebSocket and polling mechanisms.
+
+### 🧬 3. Federated Machine Learning Diagnostics
+- **Edge-Based Predictions**: Predictive models (like XGBoost and Scikit-learn random forests) are embedded directly into the backend for instantaneous diagnostic probability scoring (e.g., cardiovascular risk trajectories).
+- **Privacy-Preserving Architecture**: Designed to support federated learning nodes, allowing hospitals to train collaborative models without sharing raw patient PHI.
+
+### ⚡ 4. Next-Generation Full-Stack Architecture
+- **FastAPI Async Backend**: Python backend built entirely on `asyncio` for high concurrency, paired with SQLite (development) or PostgreSQL (production) for highly structured relational data.
+- **React 19 & Vite**: The frontend is built on the bleeding edge of the React ecosystem using Vite for instant HMR (Hot Module Replacement) and optimized production builds.
+- **Zustand State Management**: Lightweight, boilerplate-free global state management for seamlessly syncing UI components across the dashboard.
+
+### 🔐 5. Enterprise-Grade Security
+- **Strict CORS & Network Isolation**: Backend middleware rigorously validates Origin headers and Trusted Hosts, rejecting cross-site forgery attempts by default.
+- **Offline Capable**: Features robust fallbacks and graceful degradation when external API connections (like internet-dependent services) are unavailable.
+- **Rate Limiting**: Integrated `SlowAPI` throttling prevents DDOS and brute-force attacks at the application edge.
 
 ---
 
